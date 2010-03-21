@@ -1,0 +1,6 @@
+<h1>Zadania do wykonania</h1>
+<%= link_to "New", :controller => "tasks", :action => "new" %>
+
+<% @tasks.each do |t| %>
+  <p><%= t.title %> [ <%= link_to "Show", :controller => "tasks", :action => "show", :id => t %> ]</p>
+<% end %>

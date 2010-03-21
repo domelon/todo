@@ -1,0 +1,16 @@
+<h1>Zadania do wykonania <%= @tasks.id %></h1>
+
+<p>
+  <h4><%=h @tasks.title %></h4>
+</p>
+
+<p>
+  <%=h @tasks.description %>
+</p>
+
+<p><i>
+  <b>Created:</b>
+  <%=h @tasks.created_at.strftime("%d.%m.%Y") %>
+</i></p>
+
+<%= link_to "Index", :controller => "tasks", :action => "index" %>
